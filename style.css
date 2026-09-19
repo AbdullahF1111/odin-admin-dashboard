@@ -28,3 +28,24 @@ body {
   background-color: #e2e8f0;
   padding: 20px;
 }
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.15);
+  border-radius: 6px;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* يجعل الأيقونة بيضاء */
+}
+ .nav-item-dashboard {
+  margin-bottom: 30px;
+}
