@@ -31,7 +31,10 @@ body {
   background: rgba(255,255,255,0.15);
   border-radius: 6px;
 }
-
+.nav-title {
+  font-size: 1.4em;
+  font-weight: 600;
+}
 .nav-icon {
   width: 24px;
   height: 24px;
@@ -39,6 +42,10 @@ body {
 }
  .nav-item-dashboard {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
 }
 
 
@@ -49,7 +56,8 @@ body {
   display: grid;
   grid-template-rows: auto auto;
   grid-auto-flow: column;
-  gap: 30px;
+  gap: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .header-row{
@@ -82,7 +90,7 @@ body {
 .actions {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 
@@ -117,7 +125,7 @@ body {
   background: #1992d4;
   color: white;
   border: none;
-  padding: 10px 10px;
+  padding: 10px 20px;
   border-radius: 20px;
   font-weight: 600;
   cursor: pointer;
@@ -125,7 +133,7 @@ body {
 
 .main-content {
   background-color: #e2e8f0;
-  padding: 15px 15px;
+  padding: 5px 15px;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: auto auto;
@@ -145,37 +153,26 @@ body {
   border-radius: 8px;
   
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: row;
   gap: 10px;
 }
 
-/* كل قسم (Announcements / Trending) هو خلية واحدة */
 .section-block {
   display: flex;
   flex-direction: column;
 }
 
 .section-title {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.small-block-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-}
 
-.projects-cards{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-auto-flow: row;
-  gap: 10px;
-}
+
+
 .card{
   background-color: #f1f5f9;
   padding: 15px;
@@ -199,25 +196,13 @@ body {
   cursor: pointer;
 }
 
-/* عنوان الكارد */
-.project-card h3 {
-  
-  font-size: 1.1em;
-}
-
-/* وصف الكارد */
-.project-card p {
-  color: #555;
-  font-size: 0.9em;
-  margin-bottom: 40px;
-}
 
 .trending-container {
   display: flex;
   flex-direction: column; /* فلكس طولي */
-  gap: 20px;
+  gap: 15px;
   background-color: white;
-   padding: 20px;
+  padding: 18px;
   border-radius: 8px;
 }
 
@@ -243,7 +228,7 @@ body {
 .username {
   font-weight: 700;
   margin: 0; /* يلغي الفراغ */
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 }
 
 .project-name {
@@ -290,9 +275,7 @@ body {
    /* آخر إعلان بدون خط */
 }
 
-.star.active {
-  filter: invert(57%) sepia(96%) saturate(748%) hue-rotate(1deg) brightness(101%) contrast(102%);
-}
+
 
 
 .star {
