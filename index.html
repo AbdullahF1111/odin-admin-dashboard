@@ -1,71 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
+
+
+
 <body>
   <div class="container">
+
     <div class="sidebar">
-  <div class="side-content">
+      <div class="side-content">
 
-    <div class="nav-item-dashboard" >
-      <img class="nav-icon" src="/images/view-dashboard.svg" alt="dashboard" style="width: 40px; height: 40px;">
-      <span style="font-size: 1.5em;">Dashboard</span>
+        <div class="nav-item-dashboard">
+          <img class="nav-icon" src="/images/view-dashboard.svg" alt="dashboard" style="width: 40px; height: 40px;">
+          <span style="font-size: 1.5em;">Dashboard</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/home.svg" alt="Home">
+          <span>Home</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/card-account-details.svg" alt="Profile">
+          <span>Profile</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/message-reply.svg" alt="Messages">
+          <span>Messages</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/clock-time-three.svg" alt="History">
+          <span>History</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/file-document-multiple.svg" alt="tasks">
+          <span>Tasks</span>
+        </div>
+
+        <div class="nav-item" style="margin-bottom: 55px;">
+          <img class="nav-icon" src="/images/account-group.svg" alt="communities">
+          <span>Communities</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/cog.svg" alt="settings">
+          <span>Settings</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/help-box.svg" alt="support">
+          <span>Support</span>
+        </div>
+
+        <div class="nav-item">
+          <img class="nav-icon" src="/images/shield-check.svg" alt="privacy">
+          <span>Privacy</span>
+        </div>
+
+      </div>
     </div>
 
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/home.svg" alt="Home">
-      <span>Home</span>
+    <div class="header">
+
+      <div class="header-row top-row">
+        <div class="search-section">
+          <img src="images/magnify.svg" class="icon" alt="search">
+          <input type="text" placeholder="Search..." class="search-bar">
+        </div>
+
+        <div class="user-section">
+          <img src="images/bell-ring.svg" class="icon" alt="notifications">
+          <img src="images/account-circle.svg" class="profile-icon" alt="user">
+          <span class="username">Morgan Oakley</span>
+        </div>
+      </div>
+
+      <div class="header-row bottom-row">
+        <div class="profile-info">
+          <img src="images/account-circle.svg" class="profile-large" alt="user">
+          <div>
+            <span class="greeting">Hi there,</span>
+            <br />
+            <span class="username-large">Morgan Oakley (@morgan)</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+
+      <!-- العمود الأيسر: Projects -->
+      <div class="projects-block">
+        <h2 class="section-title">Your Projects</h2>
+
+        <div class="large-block-content">
+
+          <div class="card">
+            <h3>Super Cool Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="card-action">
+              <img src="images/star-plus-outline.svg" class="icon star" alt="favorite">
+              <img src="images/eye-plus-outline.svg" class="icon" alt="watch">
+              <img src="images/share-variant.svg" class="icon" alt="share">
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Less Cool Project</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div class="card-action">
+              <img src="images/star-plus-outline.svg" class="icon star" alt="favorite">
+              <img src="images/eye-plus-outline.svg" class="icon" alt="watch">
+              <img src="images/share-variant.svg" class="icon" alt="share">
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Impossible App</h3>
+            <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <div class="card-action">
+              <img src="images/star-plus-outline.svg" class="icon star" alt="favorite">
+              <img src="images/eye-plus-outline.svg" class="icon" alt="watch">
+              <img src="images/share-variant.svg" class="icon" alt="share">
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Easy Peasy App</h3>
+            <p>Etiam porta sem malesuada magna mollis euismod.</p>
+            <div class="card-action">
+              <img src="images/star-plus-outline.svg" class="icon star" alt="favorite">
+              <img src="images/eye-plus-outline.svg" class="icon" alt="watch">
+              <img src="images/share-variant.svg" class="icon" alt="share">
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Ad Blocker</h3>
+            <p>Curabitur blandit tempus porttitor.</p>
+            <div class="card-action">
+              <img src="images/star-plus-outline.svg" class="icon" alt="favorite">
+              <img src="images/eye-plus-outline.svg" class="icon" alt="watch">
+              <img src="images/share-variant.svg" class="icon" alt="share">
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Money Maker</h3>
+            <p>Vestibulum id ligula porta felis euismod semper.</p>
+            <div class="card-action">
+              <img src="images/star-plus-outline.svg" class="icon" alt="favorite">
+              <img src="images/eye-plus-outline.svg" class="icon" alt="watch">
+              <img src="images/share-variant.svg" class="icon" alt="share">
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!-- العمود الأيمن الصف الأول: Announcements -->
+      <div class="section-block">
+        <h2 class="section-title">Announcements</h2>
+
+        <div class="announcement-container">
+          <div class="announcement">
+            <h3>New Feature Released!</h3>
+            <p>We are excited to announce the release of our new feature that will enhance your experience.</p>
+          </div>
+
+          <div class="announcement">
+            <h3>Scheduled Maintenance</h3>
+            <p>Please be aware that there will be scheduled maintenance on our servers this weekend.</p>
+          </div>
+
+          <div class="announcement">
+            <h3>Community Event</h3>
+            <p>Join us for our upcoming community event where you can connect with other users and share ideas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- العمود الأيمن الصف الثاني: Trending -->
+      <div class="section-block">
+        <h2 class="section-title">Trending</h2>
+
+        <div class="trending-container">
+
+          <div class="trending-item">
+            <img src="images/account-circle.svg" class="trending-icon" alt="user">
+            <div>
+              <p class="username">@tegan</p>
+              <p class="project-name">World Peace Builder</p>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <img src="images/account-circle.svg" class="trending-icon" alt="user">
+            <div>
+              <p class="username">@morgan</p>
+              <p class="project-name">Super Cool Project</p>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <img src="images/account-circle.svg" class="trending-icon" alt="user">
+            <div>
+              <p class="username">@kendall</p>
+              <p class="project-name">Life Changing App</p>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <img src="images/account-circle.svg" class="trending-icon" alt="user">
+            <div>
+              <p class="username">@alex</p>
+              <p class="project-name">No Traffic Maker</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/card-account-details.svg" alt="Profile">
-      <span>Profile</span>
-    </div>
-
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/message-reply.svg" alt="Messages">
-      <span>Messages</span>
-    </div>
-
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/clock-time-three.svg" alt="History">
-      <span>History</span>
-    </div>
-
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/file-document-multiple.svg" alt="tasks">
-      <span>Tasks</span>
-    </div>
-
-    <div class="nav-item" style="margin-bottom: 55px;">
-      <img class="nav-icon" src="/images/account-group.svg" alt="communities">
-      <span>Communities</span>
-    </div>
-
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/cog.svg" alt="settings">
-      <span>Settings</span>
-    </div>
-
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/help-box.svg" alt="support">
-      <span>Support</span>
-    </div>
-
-    <div class="nav-item">
-      <img class="nav-icon" src="/images/shield-check.svg" alt="privacy">
-      <span>Privacy</span>
-    </div>
-
-  </div>
-</div>
-
-    <div class="header">Header</div>
-    <div class="main-content">Main Content</div>
   </div>
 </body>
+<script>
+  document.querySelectorAll('.star').forEach(star => {
+    star.addEventListener('click', () => {
+      star.classList.toggle('active');
+    });
+  });
+</script>
 </html>
