@@ -6,7 +6,7 @@ This project was built as part of [The Odin Project](https://www.theodinproject.
 
 ## 🔗 Live Demo
 
-[View it live on GitHub Pages](#) <!-- replace with your actual GitHub Pages link -->
+[View it live on GitHub Pages](https://abdullahf1111.github.io/odin-admin-dashboard/) <!-- replace with your actual GitHub Pages link -->
 
 
 ## 🛠️ Built With
